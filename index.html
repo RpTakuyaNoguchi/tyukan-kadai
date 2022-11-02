@@ -31,17 +31,19 @@
       <!-- end sidebar -->
       <div class="contents_list">
         <h2 class="contents_list_title">コンテンツ一覧</h2>
+        <label for="contents_list_input" class="contents_list_input_icon">
+        </label>
         <div class="contents_list_search">
-          <label for="contents_list_input" class="contents_list_input_icon">
-          </label>
           <input
             class="contents_list_input radius"
             type="text"
             placeholder="絞り込み検索"
           />
           <div class="contents_list_button radius">
-            <span class="material-symbols-outlined"> sync_alt </span>
-            <p>列を並び替え</p>
+            <span class="material-symbols-outlined contents_list_button_img">
+              sync_alt
+            </span>
+            <p class="contents_list_button_text">列を並び替え</p>
           </div>
           <div class="contents_list_button radius">
             <span class="material-symbols-outlined contents_list_button_img">
@@ -50,6 +52,7 @@
             <p class="contents_list_button_text">表データを保存</p>
           </div>
         </div>
+        <div class="contents_list_table_margin"></div>
         <table class="contents_list_table">
           <tr class="contents_list_table_item">
             <td>ID</td>
