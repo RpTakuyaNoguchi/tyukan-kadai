@@ -1,3 +1,7 @@
+// 位置調整
+// 大きさ調整
+// レイアウト調整
+
 .humberger_icon {
   // 位置調整
   display: flex;
@@ -13,21 +17,29 @@
   &_line {
     position: relative;
     @include humberger_line;
+    transition: all 0.8s ease-out;
     &::before {
       content: "";
       position: absolute;
       top: -5.33px;
-      width: 20px;
-      height: 1.78px;
-      background: currentColor;
+      @include humberger_line;
     }
     &:after {
       content: "";
       position: absolute;
       top: 5.33px;
-      width: 20px;
-      height: 1.78px;
-      background: currentColor;
+      @include humberger_line;
+    }
+  }
+  &_line_active {
+    transform: rotate(135deg);
+    &:after {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+    &::before {
+      display: none;
     }
   }
 }
@@ -54,6 +66,3 @@
     text-align: center;
   }
 }
-// 位置調整
-// 大きさ調整
-// レイアウト調整
