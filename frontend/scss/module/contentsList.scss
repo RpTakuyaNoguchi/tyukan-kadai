@@ -99,14 +99,15 @@
       width: 100%;
       td {
         padding: 0 8px;
+        box-sizing: border-box;
       }
       > td:nth-child(1) {
         // width: 14%;
-        width: calc(180px - 16px);
+        width: 180px;
       }
       > td:nth-child(2) {
         // width: 18.75%;
-        width: calc(240px - 16px);
+        width: 240px;
       }
       > td:nth-child(3) {
         min-width: 320px;
