@@ -96,6 +96,7 @@
     &_item {
       height: 48px;
       text-align: left;
+      width: 100%;
       td {
         padding: 0 8px;
       }
@@ -107,9 +108,9 @@
         // width: 18.75%;
         width: calc(240px - 16px);
       }
-      // > td:nth-child(3) {
-      //   width: 320px;
-      // }
+      > td:nth-child(3) {
+        min-width: 320px;
+      }
       &:nth-child(even) {
         background-color: #f6f6f6;
       }
