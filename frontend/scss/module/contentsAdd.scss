@@ -1,0 +1,21 @@
+.contents_add {
+  background-color: aqua;
+  width: 0px;
+  z-index: 1;
+  transition: all 0.7s ease-in-out;
+  &_inner {
+    position: absolute;
+    left: 80px;
+    transform: translateX(-300px);
+    transition: all 0.7s ease-in-out;
+  }
+}
+
+.contents_add_active {
+  width: 300px;
+}
+
+.contents_add_inner_active {
+  transform: translateX(0);
+  //   transition: width 0.6s;
+}
