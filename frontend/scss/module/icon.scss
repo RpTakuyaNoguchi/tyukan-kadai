@@ -10,9 +10,6 @@
   // 大きさ調整
   width: 24px;
   height: 24px;
-  // レイアウト調整
-  margin-top: 56px;
-  margin-bottom: 40px;
   // ハンバーガーアイコン作成
   &_line {
     position: relative;
@@ -49,6 +46,7 @@
   width: 56px;
   height: 46px;
   padding: 5px 12px;
+  @include font_color;
   &_img {
     // 大きさ調整
     width: 28px;

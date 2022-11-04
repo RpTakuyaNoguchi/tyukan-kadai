@@ -25,10 +25,12 @@
   &_input {
     width: calc(100% - 164px - 150px - 32px);
     height: 52px;
+    font-size: 14px;
     border: 1px solid rgba(0, 0, 0, 0.12);
     padding-left: calc(12px + 24px + 8px);
+    padding-right: 12px;
+    line-height: 20.27px;
     &::placeholder {
-      font-size: 14px;
       height: 20px;
     }
     &_icon {
@@ -98,19 +100,17 @@
       text-align: left;
       width: 100%;
       td {
-        padding: 0 8px;
+        padding: 8px 8px;
         box-sizing: border-box;
       }
       > td:nth-child(1) {
-        min-width: 180px;
         width: 180px;
       }
       > td:nth-child(2) {
-        min-width: 240px;
         width: 240px;
       }
       > td:nth-child(3) {
-        min-width: 320px;
+        word-break: break-all;
       }
       &:nth-child(even) {
         background-color: #f6f6f6;
