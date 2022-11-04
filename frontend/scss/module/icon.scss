@@ -24,7 +24,7 @@
       top: -5.33px;
       @include humberger_line;
     }
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       top: 5.33px;
@@ -33,9 +33,9 @@
   }
   &_line_active {
     transform: rotate(135deg);
-    &:after {
+    &::after {
       top: 50%;
-      left: 50%;
+      // left: 50%;
       transform: translate(-50%, -50%) rotate(90deg);
     }
     &::before {
