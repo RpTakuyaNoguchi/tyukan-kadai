@@ -1,0 +1,15 @@
+.button_reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &_text {
+    color: $button_color;
+  }
+}
+
+.button_register {
+  border: none;
+  border-radius: 4px;
+  background-color: $button_color;
+  color: #fff;
+}

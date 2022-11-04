@@ -49,7 +49,7 @@
     }
   }
   &_button {
-    color: #6b0fa4;
+    color: $button_color;
     // 位置調整
     display: flex;
     justify-content: center;
@@ -59,7 +59,7 @@
     height: 50px;
     font-size: 14px;
     // レイアウト調整
-    border: 1px solid #6b0fa4;
+    border: 1px solid $button_color;
     margin-left: 16px;
     &_img {
       // 位置調整
