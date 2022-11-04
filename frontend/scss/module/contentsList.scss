@@ -102,11 +102,11 @@
         box-sizing: border-box;
       }
       > td:nth-child(1) {
-        // width: 14%;
+        min-width: 180px;
         width: 180px;
       }
       > td:nth-child(2) {
-        // width: 18.75%;
+        min-width: 240px;
         width: 240px;
       }
       > td:nth-child(3) {

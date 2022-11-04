@@ -31,7 +31,37 @@
       <!-- end sidebar -->
       <div class="contents_add">
         <div class="contents_add_inner">
-          <div>コンテンツ追加</div>
+          <div class="contents_add_title">コンテンツ追加</div>
+          <div class="contents_add_items">
+            <div class="contents_add_text">氏名</div>
+            <input class="contents_add_input" type="text" maxlength="10" />
+            <div class="contents_add_helper">
+              １０文字以内で入力してください
+            </div>
+            <div class="contents_add_text">メールアドレス</div>
+            <input
+              class="contents_add_input"
+              type="email"
+              pattern="^[0-9a-zA-Z]+$"
+            />
+            <div class="contents_add_helper">半角で入力してください</div>
+            <div class="contents_add_text">電話番号</div>
+            <input class="contents_add_input" type="tel" pattern="[^-]" />
+            <div class="contents_add_helper">
+              ハイフンなしで入力してください
+            </div>
+            <div class="contents_add_text">誕生日</div>
+            <input class="contents_add_input" type="date" />
+            <div class="contents_add_text">イメージカラー</div>
+            <input class="contents_add_input" type="color" />
+            <div class="contents_add_text">ログイン状態</div>
+            <div class="contents_add_login">
+              <div class="contents_add_check">
+                <input class="contents_add_checkbox" type="checkbox" />
+              </div>
+              <div class="contents_add_login_text">ログイン状態を保持する</div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- end contents_add -->
