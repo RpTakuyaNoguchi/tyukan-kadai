@@ -4,9 +4,13 @@
     rgba(200, 213, 228, 0.5),
     rgba(200, 213, 228, 0.5)
   );
-
   width: 100%;
   padding: 0 40px;
+  margin-left: 80px;
+  transition: all 0.8s ease-in-out;
+  &.is_active {
+    margin-left: 400px;
+  }
   &_title {
     font-family: "Noto Sans JP";
     font-size: 32px;

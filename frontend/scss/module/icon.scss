@@ -14,29 +14,31 @@
   &_line {
     position: relative;
     @include humberger_line;
-    transition: all 0.8s ease-out;
+    transition: all 0.3s ease-out;
     &::before {
+      transition: all 0.6s ease-out;
       content: "";
       position: absolute;
       top: -5.33px;
       @include humberger_line;
     }
     &::after {
+      transition: all 0.6s ease-out;
       content: "";
       position: absolute;
       top: 5.33px;
       @include humberger_line;
     }
-  }
-  &_line_active {
-    transform: rotate(135deg);
-    &::after {
-      top: 50%;
-      // left: 50%;
-      transform: translate(-50%, -50%) rotate(90deg);
-    }
-    &::before {
-      display: none;
+    &.is_active {
+      background-color: #fff;
+      &::before {
+        top: 0;
+        transform: rotate(-45deg);
+      }
+      &::after {
+        top: 0;
+        transform: rotate(45deg);
+      }
     }
   }
 }
