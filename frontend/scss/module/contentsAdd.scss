@@ -52,6 +52,24 @@
       border: 2px solid color(hover_focus);
     }
   }
+  .image_color_label {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-top: 8px;
+    border-radius: 8px;
+    height: 52px;
+    .image_color {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 60px;
+      padding: 0;
+      margin: 0;
+    }
+  }
   &_helper {
     color: color(font);
     font-size: 12px;
