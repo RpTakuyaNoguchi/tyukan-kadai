@@ -53,13 +53,23 @@
             <div class="contents_add_text">誕生日</div>
             <input class="contents_add_input" type="date" />
             <div class="contents_add_text">イメージカラー</div>
-            <input class="contents_add_input" type="color" />
+            <label class="image_color_label" for="image_color">
+              <input class="contents_add_input image_color" type="color" />
+            </label>
             <div class="contents_add_text">ログイン状態</div>
             <div class="contents_add_login">
-              <div class="contents_add_check">
-                <input class="contents_add_checkbox" type="checkbox" />
-              </div>
-              <div class="contents_add_login_text">ログイン状態を保持する</div>
+              <label for="contents_add_checkbox" class="contents_add_check">
+                <input
+                  class="contents_add_checkbox"
+                  id="contents_add_checkbox"
+                  type="checkbox"
+                />
+              </label>
+              <label for="contents_add_checkbox">
+                <div class="contents_add_login_text">
+                  ログイン状態を保持する
+                </div>
+              </label>
             </div>
           </div>
         </div>
