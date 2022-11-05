@@ -68,7 +68,7 @@
 }
 
 .group_add_icon.is_active {
-  color: $button_color;
+  color: color(button);
   & > .icon_img {
     border-radius: 40px;
     background: linear-gradient(
