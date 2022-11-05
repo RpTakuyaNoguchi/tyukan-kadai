@@ -60,7 +60,7 @@
     justify-content: center;
     margin: 0 auto;
     // レイアウト調整
-    margin: 2px 14px;
+    padding: 2px 14px;
   }
   &_text {
     text-align: center;
@@ -70,6 +70,12 @@
 .group_add_icon.is_active {
   color: $button_color;
   & > .icon_img {
-    background-color: color(button);
+    border-radius: 40px;
+    background: linear-gradient(
+        0deg,
+        color(contents_icon_bg),
+        color(contents_icon_bg)
+      ),
+      #fff;
   }
 }
