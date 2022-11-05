@@ -41,7 +41,7 @@
       position: relative;
       &::before {
         @include fontIcon("\e8b6");
-        @include font_color;
+        color: color(font);
         width: 24px;
         height: 24px;
         font-size: 24px;
@@ -55,7 +55,7 @@
     }
   }
   &_button {
-    color: $button_color;
+    color: color(button);
     // 位置調整
     display: flex;
     justify-content: center;
@@ -65,7 +65,7 @@
     height: 50px;
     font-size: 14px;
     // レイアウト調整
-    border: 1px solid $button_color;
+    border: 1px solid color(button);
     margin-left: 16px;
     &_img {
       // 位置調整
@@ -89,7 +89,7 @@
     }
   }
   &_table {
-    @include font_color;
+    color: color(font);
     background-color: #ffffff;
     width: 100%;
     margin-bottom: 142px;
@@ -117,7 +117,7 @@
         word-break: break-all;
       }
       &:nth-child(even) {
-        background-color: #f6f6f6;
+        background-color: color(table_even_bg);
       }
     }
   }

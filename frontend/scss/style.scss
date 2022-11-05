@@ -2,11 +2,13 @@
 @import "base/base.scss";
 @import "base/normalize.scss";
 
+// function
+@import "function/basic.scss";
+
 // mixin
 @import "mixin/humberger_line.scss";
 @import "mixin/fontIcon.scss";
 @import "mixin/font_color.scss";
-@import "mixin/font_size.scss";
 @import "mixin/button.scss";
 
 // module

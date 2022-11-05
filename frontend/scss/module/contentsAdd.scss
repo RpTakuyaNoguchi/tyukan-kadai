@@ -26,12 +26,11 @@
     margin-bottom: 24px;
   }
   &_items {
-    // padding-top: 24px;
     overflow-y: scroll;
     height: 500px;
   }
   &_text {
-    @include contents_add_font_size;
+    font-size: 14px;
     height: 20px;
     margin-top: 24px;
   }
@@ -40,21 +39,21 @@
     height: 52px;
     font-size: 14px;
     margin-top: 8px;
-    background-color: #f6f6f6;
+    background-color: color(input);
     box-sizing: border-box;
     border: none;
     border-radius: 8px;
     padding: 0 16px 0 16px;
     &:hover {
-      border: 2px solid #34b0c0;
+      border: 2px solid color(hover_focus);
     }
     &:focus {
       outline: none;
-      border: 2px solid #34b0c0;
+      border: 2px solid color(hover_focus);
     }
   }
   &_helper {
-    @include font_color;
+    color: color(font);
     font-size: 12px;
     margin-top: 4px;
   }
@@ -76,7 +75,7 @@
     transform: scale(0.8335);
   }
   &_login_text {
-    @include contents_add_font_size;
+    font-size: 14px;
   }
   &_buttons {
     width: 320px;

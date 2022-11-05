@@ -14,7 +14,7 @@
   &_line {
     position: relative;
     @include humberger_line;
-    transition: all 0.3s ease-out;
+    transition: all 0.6s ease-out;
     &::before {
       transition: all 0.6s ease-out;
       content: "";
@@ -48,7 +48,7 @@
   width: 56px;
   height: 46px;
   padding: 5px 12px;
-  @include font_color;
+  color: color(font);
   &_img {
     // 大きさ調整
     width: 28px;
@@ -64,5 +64,12 @@
   }
   &_text {
     text-align: center;
+  }
+}
+
+.group_add_icon.is_active {
+  color: $button_color;
+  & > .icon_img {
+    background-color: color(button);
   }
 }
