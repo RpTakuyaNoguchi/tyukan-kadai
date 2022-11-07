@@ -1,0 +1,9 @@
+$media: (
+  "sp": "screen and (maxwidth: 768px)",
+);
+
+@mixin mq($value) {
+  @media #{map-get($media, $value)} {
+    @content;
+  }
+}

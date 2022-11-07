@@ -14,4 +14,13 @@
     margin-top: 56px;
     margin-bottom: 40px;
   }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
+
+// @include mq(sp) {
+//   .side_bar {
+//     display: none;
+//   }
+// }
