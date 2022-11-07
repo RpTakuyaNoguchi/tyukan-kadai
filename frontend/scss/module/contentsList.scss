@@ -37,6 +37,7 @@
     padding-left: calc(12px + 24px + 8px);
     padding-right: 12px;
     line-height: 20.27px;
+    box-sizing: border-box;
     &::placeholder {
       height: 20px;
     }
@@ -134,8 +135,35 @@
       line-height: 31.86px;
       margin: 33px 0;
     }
-    &search {
-      margin: 0;
+    &_search {
+      margin-bottom: 18px;
     }
+    &_input {
+      width: calc(100% - 52px - 52px);
+    }
+    &_button {
+      width: 52px;
+      height: 52px;
+      margin: 0;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      background-color: #ffffff;
+      box-sizing: border-box;
+      &_img {
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+        margin: 14px;
+      }
+      &_text {
+        display: none;
+      }
+      &.sp_border_none {
+        border-left: none;
+        border-right: none;
+      }
+    }
+  }
+  .radius {
+    border-radius: 0;
   }
 }
