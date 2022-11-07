@@ -140,6 +140,8 @@
     }
     &_input {
       width: calc(100% - 52px - 52px);
+      border-top-left-radius: 4px !important;
+      border-bottom-left-radius: 4px !important;
     }
     &_button {
       width: 52px;
