@@ -1,47 +1,7 @@
+@charset "UTF-8";
 // 位置調整
 // 大きさ調整
 // レイアウト調整
-
-.humberger_icon {
-  // 位置調整
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // 大きさ調整
-  width: 24px;
-  height: 24px;
-  // ハンバーガーアイコン作成
-  &_line {
-    position: relative;
-    @include humberger_line;
-    transition: all 0.6s ease-out;
-    &::before {
-      transition: all 0.6s ease-out;
-      content: "";
-      position: absolute;
-      top: -5.33px;
-      @include humberger_line;
-    }
-    &::after {
-      transition: all 0.6s ease-out;
-      content: "";
-      position: absolute;
-      top: 5.33px;
-      @include humberger_line;
-    }
-    &.is_active {
-      background-color: #fff;
-      &::before {
-        top: 0;
-        transform: rotate(-45deg);
-      }
-      &::after {
-        top: 0;
-        transform: rotate(45deg);
-      }
-    }
-  }
-}
 
 .icon {
   margin-top: 4px;
@@ -49,6 +9,7 @@
   height: 46px;
   padding: 5px 12px;
   color: color(font);
+
   &_img {
     // 大きさ調整
     width: 28px;
@@ -62,12 +23,13 @@
     // レイアウト調整
     padding: 2px 14px;
   }
+
   &_text {
     text-align: center;
   }
 }
 
-.group_add_icon.is_active {
+.side_bar_contents_icon.is_active {
   color: color(button);
   & > .icon_img {
     border-radius: 40px;
@@ -78,4 +40,15 @@
       ),
       #fff;
   }
+}
+
+.bottom_bar_contents_icon.is_active {
+  color: color(button);
+  border-radius: 40px;
+  background: linear-gradient(
+      0deg,
+      color(contents_icon_bg),
+      color(contents_icon_bg)
+    ),
+    #fff;
 }

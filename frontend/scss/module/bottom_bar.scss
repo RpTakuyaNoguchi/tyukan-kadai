@@ -1,5 +1,8 @@
+@charset "UTF-8";
+
 .bottom_bar {
   display: none;
+
   @media screen and (max-width: 768px) {
     display: block;
     border: 1px solid color(border);
@@ -8,22 +11,32 @@
     position: fixed;
     bottom: 0;
     background-color: #fff;
+
     &_items {
       height: 100%;
       display: flex;
       margin: 0 4px;
       justify-content: space-between;
       align-items: center;
-      > .icon {
+    }
+
+    &_item {
+      height: 32px;
+      flex: 1;
+      padding: 0;
+      margin: 8px 12px 8px;
+      > .icon_img {
+        width: 32px;
         height: 32px;
-        flex: 1;
         padding: 0;
-        margin: 8px 12px 8px;
-        > .icon_img {
-          width: 32px;
-          height: 32px;
-          padding: 0;
-        }
+        color: color(button);
+      }
+    }
+    &_humberger_icon {
+      > p,
+      p::after,
+      p::before {
+        background-color: color(button);
       }
     }
   }
