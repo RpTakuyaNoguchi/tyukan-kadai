@@ -22,15 +22,17 @@
           <p class="humberger_icon_line"></p>
         </div>
         <div class="side_bar_items">
-          <div class="icon">
-            <span class="material-symbols-rounded icon_img"> home </span>
-            <p class="icon_text">ホーム</p>
+          <div class="icon side_bar_icon">
+            <span class="material-symbols-rounded icon_img side_bar_icon_img">
+              home
+            </span>
+            <p class="icon_text side_bar_icon_text">ホーム</p>
           </div>
-          <div class="icon side_bar_contents_icon">
-            <span class="material-symbols-rounded icon_img">
+          <div class="icon side_bar_icon side_bar_contents_icon">
+            <span class="material-symbols-rounded icon_img side_bar_icon_img">
               recent_actors
             </span>
-            <p class="icon_text">コンテンツ</p>
+            <p class="icon_text side_bar_icon_text">コンテンツ</p>
           </div>
         </div>
       </nav>
@@ -79,26 +81,25 @@
             <div class="contents_add_text">ログイン状態</div>
             <div class="contents_add_login">
               <input
-                class="contents_add_checkbox"
-                id="contents_add_checkbox"
+                class="contents_add_login_checkbox"
+                id="contents_add_login_checkbox"
                 type="checkbox"
               />
-              <label for="contents_add_checkbox" class="contents_add_check">
-                <div>
-                  <span class="material-symbols-rounded">
-                    check_box_outline_blank
-                  </span>
-                </div>
+              <label
+                for="contents_add_login_checkbox"
+                class="contents_add_login_check"
+              >
+                <span class="material-symbols-rounded">
+                  check_box_outline_blank
+                </span>
               </label>
               <label
-                for="contents_add_checkbox"
-                class="contents_add_check contents_add_checkbox_icon"
+                for="contents_add_login_checkbox"
+                class="contents_add_login_check contents_add_login_checked_icon"
               >
-                <div>
-                  <span class="material-symbols-rounded"> check_box </span>
-                </div>
+                <span class="material-symbols-rounded"> check_box </span>
               </label>
-              <label for="contents_add_checkbox">
+              <label for="contents_add_login_checkbox">
                 <div class="contents_add_login_text">
                   ログイン状態を保持する
                 </div>

@@ -6,6 +6,15 @@
   src: url("/static/font/NotoSansJP_Regular.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "Noto Sans JP";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  src: local("Noto Sans Japanese Medium"), local("NotoSansJapanese-Medium"),
+    url("/static/font/NotoSansJP_Medium.woff2") format("woff2");
+}
+
 html {
   height: 100%;
   font-size: 62.5%;
