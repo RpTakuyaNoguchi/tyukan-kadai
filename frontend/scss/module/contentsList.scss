@@ -24,6 +24,7 @@
     display: flex;
     align-items: flex-end;
     margin-bottom: 24px;
+    position: relative;
     .radius {
       border-radius: 4px;
     }
@@ -41,16 +42,19 @@
       height: 20px;
     }
     &_icon {
-      position: relative;
       &::before {
-        @include fontIcon("\e8b6");
+        @include fontIcon_rounded("\e8b6");
         color: color(font);
         width: 24px;
         height: 24px;
         font-size: 24px;
         position: absolute;
-        top: 14px;
-        left: 12px;
+        // top: 14px;
+        left: 22px;
+        top: 50%;
+        // left: 50%;
+        transform: translate(-50%, -50%);
+
         display: flex;
         align-items: center;
         justify-content: center;
@@ -58,6 +62,7 @@
     }
   }
   &_button {
+    @include pointer;
     color: color(button);
     // 位置調整
     display: flex;
@@ -97,6 +102,7 @@
     width: 100%;
     margin-bottom: 142px;
     border-collapse: collapse;
+    font-size: 14px;
     &_margin {
       height: 8px;
       border-radius: 4px 4px 0px 0px;
@@ -111,10 +117,12 @@
         box-sizing: border-box;
       }
       > td:nth-child(1) {
-        width: 180px;
+        // width: 180px;
+        width: 18.75%;
       }
       > td:nth-child(2) {
-        width: 240px;
+        // width: 240px;
+        width: 25%;
       }
       > td:nth-child(3) {
         word-break: break-all;

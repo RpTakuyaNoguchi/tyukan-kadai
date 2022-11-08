@@ -33,6 +33,7 @@
       }
     }
     &_humberger_icon {
+      @include pointer;
       > p,
       p::after,
       p::before {

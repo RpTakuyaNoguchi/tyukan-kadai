@@ -47,9 +47,6 @@
     border: none;
     border-radius: 8px;
     padding: 0 16px 0 16px;
-    &:hover {
-      border: 2px solid color(hover_focus);
-    }
     &:focus {
       outline: none;
       border: 2px solid color(hover_focus);
@@ -89,6 +86,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include pointer;
   }
   &_checkbox {
     display: none;
@@ -107,6 +105,7 @@
   }
   &_login_text {
     font-size: 14px;
+    @include pointer;
   }
   &_buttons {
     width: 320px;
@@ -120,6 +119,7 @@
     height: 50px;
     margin-left: 16px;
     padding: 0;
+    @include pointer;
   }
   @media screen and (max-width: 768px) {
     display: none;
