@@ -195,6 +195,10 @@
   .radius {
     border-radius: 0;
   }
+  @include mq(sp) {
+    border: #ffffff;
+    background-color: aqua;
+  }
 }
 
 .sp_table {

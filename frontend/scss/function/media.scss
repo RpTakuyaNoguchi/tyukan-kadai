@@ -1,5 +1,5 @@
 $media: (
-  "sp": "screen and (maxwidth: 768px)",
+  "sp": "screen and (max-width: 768px)",
 );
 
 @mixin mq($value) {
