@@ -1,6 +1,7 @@
 .sp_add_icon {
   display: none;
   @media screen and (max-width: 768px) {
+    @include pointer;
     display: flex;
     align-items: center;
     justify-content: center;

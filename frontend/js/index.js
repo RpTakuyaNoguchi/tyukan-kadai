@@ -4,9 +4,7 @@ const humberger_icon = document.querySelector(".humberger_icon");
 const side_bar_contents_icon = document.querySelector(
   ".side_bar_contents_icon"
 );
-const bottom_bar_contents_icon = document.querySelector(
-  ".bottom_bar_contents_icon"
-);
+const js_contents_icon = document.querySelector(".js_contents_icon");
 const humberger_icon_line = document.querySelector(".humberger_icon_line");
 const contents_add = document.querySelector(".contents_add");
 const contents_add_buttons = document.querySelector(".contents_add_buttons");
@@ -23,6 +21,6 @@ side_bar_contents_icon.addEventListener("click", () => {
   contents_list.classList.toggle("is_active");
 });
 
-bottom_bar_contents_icon.addEventListener("click", () => {
-  bottom_bar_contents_icon.classList.toggle("is_active");
+js_contents_icon.addEventListener("click", () => {
+  js_contents_icon.classList.toggle("is_active");
 });

@@ -5,27 +5,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // 大きさ調整
-  width: 24px;
-  height: 24px;
   // ハンバーガーアイコン作成
   &_line {
     position: relative;
     @include humberger_line;
     transition: all 0.6s ease-out;
     &::before {
+      @include humberger_line;
       transition: all 0.6s ease-out;
       content: "";
       position: absolute;
       top: -5.33px;
-      @include humberger_line;
     }
     &::after {
+      @include humberger_line;
       transition: all 0.6s ease-out;
       content: "";
       position: absolute;
       top: 5.33px;
-      @include humberger_line;
     }
     &.is_active {
       background-color: #fff;

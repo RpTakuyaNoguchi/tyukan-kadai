@@ -2,3 +2,8 @@
   content: $codePoint;
   font-family: "Material Symbols Outlined";
 }
+
+@mixin fontIcon_rounded($codePoint) {
+  content: $codePoint;
+  font-family: "Material Symbols Rounded";
+}
