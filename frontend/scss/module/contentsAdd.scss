@@ -120,14 +120,33 @@
     align-items: center;
     gap: 16px;
   }
-  &_button {
+  &_button_reset {
     flex: 1;
     height: 50px;
     padding: 0;
     font-size: 14px;
     @include pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_text {
+      color: color(button);
+    }
   }
-  @media screen and (max-width: 768px) {
+  &_button_register {
+    flex: 1;
+    height: 50px;
+    padding: 0;
+    font-size: 14px;
+    @include pointer;
+
+    border: none;
+    border-radius: 4px;
+    background-color: color(button);
+    color: #fff;
+  }
+  @include mq(sp) {
     display: none;
   }
 }
