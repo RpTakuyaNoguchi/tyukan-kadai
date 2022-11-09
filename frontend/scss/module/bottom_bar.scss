@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 .bottom_bar {
-    display: none;
+    @include mq(pc) {
+        display: none;
+    }
 
     @include mq(sp) {
         display: block;
