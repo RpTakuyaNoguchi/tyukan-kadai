@@ -1,58 +1,58 @@
 @charset "UTF-8";
 
 .side_bar {
-  width: 80px;
-  height: 100vh;
-  padding-top: 56px;
-  background-color: white;
-  box-sizing: border-box;
-  border-right: 1px solid color(border);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  position: fixed;
-  z-index: 2;
+    width: 80px;
+    height: 100vh;
+    padding-top: 56px;
+    background-color: white;
+    box-sizing: border-box;
+    border-right: 1px solid color(border);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: 2;
 
-  .humberger_icon {
-    // 大きさ調整
-    width: 24px;
-    height: 24px;
-    padding-bottom: 40px;
-    @include pointer;
-  }
-
-  &_icon {
-    margin-top: 4px;
-    width: 56px;
-    height: 46px;
-    padding: 5px 12px;
-    color: color(font);
-
-    &_img {
-      // 大きさ調整
-      width: 28px;
-      height: 28px;
-      font-size: 28px;
-      // 位置調整
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto;
-      // レイアウト調整
-      padding: 2px 14px;
+    .humberger_icon {
+        // 大きさ調整
+        width: 24px;
+        height: 24px;
+        padding-bottom: 40px;
+        @include pointer;
     }
 
-    &_text {
-      text-align: center;
-      height: 14px;
-      padding-top: 4px;
-      box-sizing: border-box;
+    &_icon {
+        margin-top: 4px;
+        width: 56px;
+        height: 46px;
+        padding: 5px 12px;
+        color: color(font);
+
+        &_img {
+            // 大きさ調整
+            width: 28px;
+            height: 28px;
+            font-size: 28px;
+            // 位置調整
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            // レイアウト調整
+            padding: 2px 14px;
+        }
+
+        &_text {
+            text-align: center;
+            height: 14px;
+            padding-top: 4px;
+            box-sizing: border-box;
+        }
+
+        @include pointer;
     }
 
-    @include pointer;
-  }
-
-  @include mq(sp) {
-    display: none;
-  }
+    @include mq(sp) {
+        display: none;
+    }
 }

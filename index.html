@@ -1,305 +1,345 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
-    <link rel="stylesheet" href="./static/webpack/style.css" />
-    <title>中間課題</title>
-  </head>
-  <body>
-    <main class="main">
-      <nav class="side_bar">
-        <div class="humberger_icon">
-          <p class="humberger_icon_line"></p>
-        </div>
-        <div class="side_bar_items">
-          <div class="icon side_bar_icon">
-            <span class="material-symbols-rounded icon_img side_bar_icon_img">
-              home
-            </span>
-            <p class="icon_text side_bar_icon_text">ホーム</p>
-          </div>
-          <div class="icon side_bar_icon side_bar_contents_icon">
-            <span class="material-symbols-rounded icon_img side_bar_icon_img">
-              recent_actors
-            </span>
-            <p class="icon_text side_bar_icon_text">コンテンツ</p>
-          </div>
-        </div>
-      </nav>
-      <!-- end side_bar -->
-      <nav class="bottom_bar">
-        <div class="bottom_bar_items">
-          <div class="icon bottom_bar_item">
-            <span class="material-symbols-outlined icon_img"> home </span>
-          </div>
-          <div class="icon js_contents_icon bottom_bar_item">
-            <span class="material-symbols-outlined icon_img"> group_add </span>
-          </div>
-          <div class="humberger_icon bottom_bar_humberger_icon bottom_bar_item">
-            <p class="humberger_icon_line"></p>
-          </div>
-        </div>
-      </nav>
-      <!-- end bottom_bar -->
-      <div class="contents_add">
-        <div class="contents_add_body">
-          <div class="contents_add_close_sp">
-            <span class="material-symbols-rounded"> close </span>
-          </div>
-          <div class="contents_add_title">コンテンツ追加</div>
-          <div class="contents_add_register_sp">登録</div>
-          <div class="contents_add_text">氏名</div>
-          <input class="contents_add_input" type="text" maxlength="10" />
-          <div class="contents_add_helper">１０文字以内で入力してください</div>
-          <div class="contents_add_text">メールアドレス</div>
-          <input
-            class="contents_add_input"
-            type="email"
-            pattern="^[0-9a-zA-Z]+$"
-          />
-          <div class="contents_add_helper">半角で入力してください</div>
-          <div class="contents_add_text">電話番号</div>
-          <input class="contents_add_input" type="tel" pattern="[^-]" />
-          <div class="contents_add_helper">ハイフンなしで入力してください</div>
-          <div class="contents_add_text">誕生日</div>
-          <input class="contents_add_input" type="date" />
-          <div class="contents_add_text">イメージカラー</div>
-          <label class="image_color_label" for="image_color">
-            <input class="contents_add_input image_color" type="color" />
-          </label>
-          <div class="contents_add_text">ログイン状態</div>
-          <div class="contents_add_login">
-            <input
-              class="contents_add_login_checkbox"
-              id="contents_add_login_checkbox"
-              type="checkbox"
-            />
-            <label
-              for="contents_add_login_checkbox"
-              class="contents_add_login_check"
-            >
-              <span class="material-symbols-rounded">
-                check_box_outline_blank
-              </span>
-            </label>
-            <label
-              for="contents_add_login_checkbox"
-              class="contents_add_login_check"
-            >
-              <span class="material-symbols-rounded"> check_box </span>
-            </label>
-            <label for="contents_add_login_checkbox">
-              <div class="contents_add_login_text">ログイン状態を保持する</div>
-            </label>
-          </div>
-        </div>
-        <div class="contents_add_buttons">
-          <div class="contents_add_button_reset">
-            <div class="button_reset_text">リセット</div>
-          </div>
-          <button class="contents_add_button_register">登録</button>
-        </div>
-      </div>
-      <!-- end contents_add -->
-      <div class="contents_list">
-        <h2 class="contents_list_title">コンテンツ一覧</h2>
-        <div class="sp_add_icon">
-          <span class="material-symbols-rounded sp_add_icon_img"> add </span>
-          <div class="sp_add_icon_text">追加</div>
-        </div>
-        <div class="contents_list_search">
-          <label for="contents_list_input" class="contents_list_input_icon">
-          </label>
-          <input
-            class="contents_list_input radius"
-            type="text"
-            placeholder="絞り込み検索"
-          />
-          <div class="contents_list_button radius sp_border_none">
-            <span class="material-symbols-outlined contents_list_button_img">
-              sync_alt
-            </span>
-            <p class="contents_list_button_text">列を並び替え</p>
-          </div>
-          <div class="contents_list_button radius sp_border_radius">
-            <span class="material-symbols-outlined contents_list_button_img">
-              download
-            </span>
-            <p class="contents_list_button_text">表データを保存</p>
-          </div>
-        </div>
-        <div class="contents_list_table_margin"></div>
-        <table class="contents_list_table">
-          <tr class="contents_list_table_item">
-            <td>ID</td>
-            <td>氏名</td>
-            <td>メールアドレス</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>
-              1ああああああああああああああああああああああああああああああああああああああああああ
-              1ああああああああああああああああああああああああああああああああああああああああああ
-            </td>
-            <td>
-              田中太郎ああああああああああああああああああああああああああああああああああああああ
-            </td>
-            <td>
-              tarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.com
-            </td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>2</td>
-            <td>田中太郎</td>
-            <td>tarou@sample_sample@sample.com</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>4</td>
-            <td>田中太郎</td>
-            <td></td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>5</td>
-            <td></td>
-            <td>tarou@sample_sample@sample.com</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td></td>
-            <td>田中太郎</td>
-            <td>tarou@sample_sample@sample.com</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>7</td>
-            <td>田中太郎</td>
-            <td>tarou@sample_sample@sample.com</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>8</td>
-            <td>田中太郎</td>
-            <td>tarou@sample_sample@sample.com</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>9</td>
-            <td>田中太郎</td>
-            <td>tarou@sample_sample@sample.com</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>10</td>
-            <td>田中太郎</td>
-            <td>tarou@sample_sample@sample.com</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>11</td>
-            <td>田中太郎</td>
-            <td>tarou@sample_sample@sample.com</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>12</td>
-            <td>田中太郎</td>
-            <td>tarou@sample_sample@sample.com</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>13</td>
-            <td>田中太郎</td>
-            <td>tarou@sample_sample@sample.com</td>
-          </tr>
-        </table>
-        <!-- end table pc -->
-        <table class="contents_list_table sp_table">
-          <tr class="contents_list_table_item">
-            <td>氏名</td>
-            <td>メールアドレス</td>
-            <td>ID</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>
-              田中太郎ああああああああああああああああああああああああああああああああああああああ
-            </td>
-            <td>
-              tarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.com
-            </td>
-            <td>
-              1ああああああああああああああああああああああああああああああああああああああああああ
-              1ああああああああああああああああああああああああああああああああああああああああああ
-            </td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>田中太郎</td>
-            <td>tarou@sample_sample@sample.com</td>
-            <td>2</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>田中太郎</td>
-            <td></td>
-            <td>4</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td></td>
-            <td>tarou@sample_sample@sample.com</td>
-            <td>5</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>田中太郎</td>
-            <td>tarou@sample_sample@sample.com</td>
-            <td></td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>田中太郎</td>
-            <td>tarou@sample_sample@sample.com</td>
-            <td>7</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>田中太郎</td>
-            <td>tarou@sample_sample@sample.com</td>
-            <td>8</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>田中太郎</td>
-            <td>tarou@sample_sample@sample.com</td>
-            <td>9</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>田中太郎</td>
-            <td>tarou@sample_sample@sample.com</td>
-            <td>10</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>田中太郎</td>
-            <td>tarou@sample_sample@sample.com</td>
-            <td>11</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>田中太郎</td>
-            <td>tarou@sample_sample@sample.com</td>
-            <td>12</td>
-          </tr>
-          <tr class="contents_list_table_item">
-            <td>田中太郎</td>
-            <td>tarou@sample_sample@sample.com</td>
-            <td>13</td>
-          </tr>
-        </table>
-      </div>
-    </main>
-    <script src="./static/webpack/bundle.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+        />
+        <link rel="stylesheet" href="./static/webpack/style.css" />
+        <title>中間課題</title>
+    </head>
+    <body>
+        <main class="main">
+            <nav class="side_bar">
+                <div class="humberger_icon">
+                    <p class="humberger_icon_line"></p>
+                </div>
+                <div class="side_bar_items">
+                    <div class="icon side_bar_icon">
+                        <span
+                            class="material-symbols-rounded icon_img side_bar_icon_img"
+                        >
+                            home
+                        </span>
+                        <p class="icon_text side_bar_icon_text">ホーム</p>
+                    </div>
+                    <div class="icon side_bar_icon side_bar_contents_icon">
+                        <span
+                            class="material-symbols-rounded icon_img side_bar_icon_img"
+                        >
+                            recent_actors
+                        </span>
+                        <p class="icon_text side_bar_icon_text">コンテンツ</p>
+                    </div>
+                </div>
+            </nav>
+            <!-- end side_bar -->
+            <nav class="bottom_bar">
+                <div class="bottom_bar_items">
+                    <div class="icon bottom_bar_item">
+                        <span class="material-symbols-outlined icon_img">
+                            home
+                        </span>
+                    </div>
+                    <div class="icon js_contents_icon bottom_bar_item">
+                        <span class="material-symbols-outlined icon_img">
+                            group_add
+                        </span>
+                    </div>
+                    <div
+                        class="humberger_icon bottom_bar_humberger_icon bottom_bar_item"
+                    >
+                        <p class="humberger_icon_line"></p>
+                    </div>
+                </div>
+            </nav>
+            <!-- end bottom_bar -->
+            <div class="contents_add">
+                <div class="contents_add_body">
+                    <div class="contents_add_close_sp">
+                        <span class="material-symbols-rounded"> close </span>
+                    </div>
+                    <div class="contents_add_title">コンテンツ追加</div>
+                    <div class="contents_add_register_sp">登録</div>
+                    <div class="contents_add_text">氏名</div>
+                    <input
+                        class="contents_add_input"
+                        type="text"
+                        maxlength="10"
+                    />
+                    <div class="contents_add_helper">
+                        １０文字以内で入力してください
+                    </div>
+                    <div class="contents_add_text">メールアドレス</div>
+                    <input
+                        class="contents_add_input"
+                        type="email"
+                        pattern="^[0-9a-zA-Z]+$"
+                    />
+                    <div class="contents_add_helper">
+                        半角で入力してください
+                    </div>
+                    <div class="contents_add_text">電話番号</div>
+                    <input
+                        class="contents_add_input"
+                        type="tel"
+                        pattern="[^-]"
+                    />
+                    <div class="contents_add_helper">
+                        ハイフンなしで入力してください
+                    </div>
+                    <div class="contents_add_text">誕生日</div>
+                    <input class="contents_add_input" type="date" />
+                    <div class="contents_add_text">イメージカラー</div>
+                    <label class="image_color_label" for="image_color">
+                        <input
+                            class="contents_add_input image_color"
+                            type="color"
+                        />
+                    </label>
+                    <div class="contents_add_text">ログイン状態</div>
+                    <div class="contents_add_login">
+                        <input
+                            class="contents_add_login_checkbox"
+                            id="contents_add_login_checkbox"
+                            type="checkbox"
+                        />
+                        <label
+                            for="contents_add_login_checkbox"
+                            class="contents_add_login_check"
+                        >
+                            <span class="material-symbols-rounded">
+                                check_box_outline_blank
+                            </span>
+                        </label>
+                        <label
+                            for="contents_add_login_checkbox"
+                            class="contents_add_login_check"
+                        >
+                            <span class="material-symbols-rounded">
+                                check_box
+                            </span>
+                        </label>
+                        <label for="contents_add_login_checkbox">
+                            <div class="contents_add_login_text">
+                                ログイン状態を保持する
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="contents_add_buttons">
+                    <div class="contents_add_button_reset">
+                        <div class="button_reset_text">リセット</div>
+                    </div>
+                    <button class="contents_add_button_register">登録</button>
+                </div>
+            </div>
+            <!-- end contents_add -->
+            <div class="contents_list">
+                <h2 class="contents_list_title">コンテンツ一覧</h2>
+                <div class="sp_add_icon">
+                    <span class="material-symbols-rounded sp_add_icon_img">
+                        add
+                    </span>
+                    <div class="sp_add_icon_text">追加</div>
+                </div>
+                <div class="contents_list_search">
+                    <label
+                        for="contents_list_input"
+                        class="contents_list_input_icon"
+                    >
+                    </label>
+                    <input
+                        class="contents_list_input radius"
+                        type="text"
+                        placeholder="絞り込み検索"
+                    />
+                    <div class="contents_list_button radius sp_border_none">
+                        <span
+                            class="material-symbols-outlined contents_list_button_img"
+                        >
+                            sync_alt
+                        </span>
+                        <p class="contents_list_button_text">列を並び替え</p>
+                    </div>
+                    <div class="contents_list_button radius sp_border_radius">
+                        <span
+                            class="material-symbols-outlined contents_list_button_img"
+                        >
+                            download
+                        </span>
+                        <p class="contents_list_button_text">表データを保存</p>
+                    </div>
+                </div>
+                <div class="contents_list_table_margin"></div>
+                <table class="contents_list_table">
+                    <tr class="contents_list_table_item">
+                        <td>ID</td>
+                        <td>氏名</td>
+                        <td>メールアドレス</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>
+                            1ああああああああああああああああああああああああああああああああああああああああああ
+                            1ああああああああああああああああああああああああああああああああああああああああああ
+                        </td>
+                        <td>
+                            田中太郎ああああああああああああああああああああああああああああああああああああああ
+                        </td>
+                        <td>
+                            tarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.com
+                        </td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>2</td>
+                        <td>田中太郎</td>
+                        <td>tarou@sample_sample@sample.com</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>4</td>
+                        <td>田中太郎</td>
+                        <td></td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>5</td>
+                        <td></td>
+                        <td>tarou@sample_sample@sample.com</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td></td>
+                        <td>田中太郎</td>
+                        <td>tarou@sample_sample@sample.com</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>7</td>
+                        <td>田中太郎</td>
+                        <td>tarou@sample_sample@sample.com</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>8</td>
+                        <td>田中太郎</td>
+                        <td>tarou@sample_sample@sample.com</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>9</td>
+                        <td>田中太郎</td>
+                        <td>tarou@sample_sample@sample.com</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>10</td>
+                        <td>田中太郎</td>
+                        <td>tarou@sample_sample@sample.com</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>11</td>
+                        <td>田中太郎</td>
+                        <td>tarou@sample_sample@sample.com</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>12</td>
+                        <td>田中太郎</td>
+                        <td>tarou@sample_sample@sample.com</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>13</td>
+                        <td>田中太郎</td>
+                        <td>tarou@sample_sample@sample.com</td>
+                    </tr>
+                </table>
+                <!-- end table pc -->
+                <table class="contents_list_table sp_table">
+                    <tr class="contents_list_table_item">
+                        <td>氏名</td>
+                        <td>メールアドレス</td>
+                        <td>ID</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>
+                            田中太郎ああああああああああああああああああああああああああああああああああああああ
+                        </td>
+                        <td>
+                            tarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.comtarou@sample_sample@sample.com
+                        </td>
+                        <td>
+                            1ああああああああああああああああああああああああああああああああああああああああああ
+                            1ああああああああああああああああああああああああああああああああああああああああああ
+                        </td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>田中太郎</td>
+                        <td>tarou@sample_sample@sample.com</td>
+                        <td>2</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>田中太郎</td>
+                        <td></td>
+                        <td>4</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td></td>
+                        <td>tarou@sample_sample@sample.com</td>
+                        <td>5</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>田中太郎</td>
+                        <td>tarou@sample_sample@sample.com</td>
+                        <td></td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>田中太郎</td>
+                        <td>tarou@sample_sample@sample.com</td>
+                        <td>7</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>田中太郎</td>
+                        <td>tarou@sample_sample@sample.com</td>
+                        <td>8</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>田中太郎</td>
+                        <td>tarou@sample_sample@sample.com</td>
+                        <td>9</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>田中太郎</td>
+                        <td>tarou@sample_sample@sample.com</td>
+                        <td>10</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>田中太郎</td>
+                        <td>tarou@sample_sample@sample.com</td>
+                        <td>11</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>田中太郎</td>
+                        <td>tarou@sample_sample@sample.com</td>
+                        <td>12</td>
+                    </tr>
+                    <tr class="contents_list_table_item">
+                        <td>田中太郎</td>
+                        <td>tarou@sample_sample@sample.com</td>
+                        <td>13</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <script src="./static/webpack/bundle.js"></script>
+    </body>
 </html>

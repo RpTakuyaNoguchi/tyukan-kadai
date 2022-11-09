@@ -562,22 +562,22 @@ template {
         .contents_list_search .radius {
           border-radius: 4px; }
       .contents_list_input {
-        width: calc(100% - 164px - 150px - 32px); }
+        width: calc(100% - 166px - 166px - 32px); }
       .contents_list_button {
         width: 166px;
         height: 50px;
         border: 1px solid #6b0fa4;
-        margin-left: 16px; }
+        margin-left: 16px;
+        padding-right: 24px;
+        padding-left: 16px;
+        display: flex; }
         .contents_list_button_img {
           width: 18px;
           height: 18px;
           font-size: 18px;
-          padding: 16px 8px 16px 16px; }
+          padding-right: 8px; }
         .contents_list_button_text {
           display: block;
-          width: 98px;
-          height: 20px;
-          padding-right: 24px;
           display: flex;
           align-items: center;
           justify-content: center; }
