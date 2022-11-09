@@ -19,16 +19,31 @@
     }
 
     @include mq(sp) {
-        display: none;
-        // width: 100%;
-        // height: calc(100vh - 98px);
-        // margin-top: 98px;
-        // border-radius: 16px 16px 0 0;
-        // z-index: 2;
-        // box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3),
-        //   0px 2px 6px 2px rgba(0, 0, 0, 0.15);
-        // &.is_active {
-        // }
+        width: 100%;
+        height: calc(100vh - 9.8rem);
+        margin-top: 100vh;
+        border-radius: 1.6rem 1.6rem 0 0;
+        z-index: 2;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3),
+            0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+        &.is_active {
+            margin-top: 9.8rem;
+        }
+    }
+
+    .contents_add_body {
+        padding: 2.4rem 1.6rem 0 1.6rem;
+        // height: calc(100vh - 9.8rem);
+        height: 100%;
+        box-sizing: border-box;
+        overflow-y: scroll;
+        position: relative;
+
+        @include mq(pc) {
+        }
+
+        @include mq(sp) {
+        }
     }
 
     .contents_add_close_sp {
@@ -39,7 +54,9 @@
             width: 1.8rem;
             height: 1.8rem;
             padding-right: 1.6rem;
-            display: inline-block;
+            position: absolute;
+            top: 2.8rem;
+            left: 1.6rem;
             .contents_add_close_sp_img {
                 width: 100%;
                 height: 100%;
@@ -48,6 +65,7 @@
                 align-items: center;
                 justify-content: center;
             }
+            @include pointer;
         }
     }
     .contents_add_register_sp {
@@ -55,32 +73,25 @@
             display: none;
         }
         @include mq(sp) {
-            display: inline-block;
-            margin-left: auto;
-            margin-right: 0;
+            position: absolute;
+            top: 2.4rem;
+            right: 1.6rem;
+            font-size: 1.8rem;
+            color: color(button);
+            @include pointer;
         }
     }
 
-    .contents_add_body {
-        width: 100%;
-        height: 100vh;
-        padding: 2.4rem 1.6rem 8.3rem 1.6rem;
-        box-sizing: border-box;
-        overflow-y: scroll;
-        position: relative;
-    }
     .contents_add_title {
         font-size: 1.8rem;
-        line-height: 26.06px;
         padding-bottom: 0.6rem;
         @include mq(pc) {
             font-weight: 500;
         }
         @include mq(sp) {
-            display: inline;
             height: 2.6rem;
             font-weight: 400;
-            margin-right: 0;
+            padding-left: 5rem;
         }
     }
     .contents_add_text {
@@ -97,7 +108,7 @@
         box-sizing: border-box;
         border: none;
         border-radius: 0.8rem;
-        padding: 0 1.6rem 0 1.6rem;
+        padding: 0 1.6rem;
         &:focus {
             outline: none;
             border: 0.2rem solid color(hover_focus);
@@ -179,6 +190,10 @@
         gap: 1.6rem;
         position: absolute;
         bottom: 0;
+
+        @include mq(sp) {
+            display: none;
+        }
     }
     .contents_add_button_reset {
         flex: 1;

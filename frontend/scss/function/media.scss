@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
 $media: (
-    "sp": "screen and (max-width: 767px)",
-    "pc": "screen and (min-width: 768px)",
+    "sp": "screen and (max-width: 1024px)",
+    "pc": "screen and (min-width: 1025px)",
+    // "sp": "screen and (max-width: 767px)",
+    // "pc": "screen and (min-width: 768px)",,
 );
 
 @mixin mq($value) {
