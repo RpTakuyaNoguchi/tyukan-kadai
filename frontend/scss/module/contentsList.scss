@@ -14,7 +14,6 @@
   &_title {
     font-size: 32px;
     font-weight: 400;
-    width: 224px;
     height: 46px;
     line-height: 46px;
     margin-top: 42px;
@@ -66,12 +65,14 @@
   &_button {
     @include pointer;
     color: color(button);
+    // box-sizing: border-box;
     // 位置調整
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
     // 大きさ調整
-    width: 164px;
+    width: 166px; //ホントは１６４px 文字折り返すから２px大きくしてる
     height: 50px;
     font-size: 14px;
     // レイアウト調整
@@ -87,12 +88,13 @@
       height: 18px;
       font-size: 18px;
       // レイアウト調整
-      margin: 16px 8px 16px 16px;
+      padding: 16px 8px 16px 16px;
     }
     &_text {
       width: 98px;
+      display: block;
       height: 20px;
-      margin-right: 24px;
+      padding-right: 24px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -172,7 +174,7 @@
         width: 24px;
         height: 24px;
         font-size: 24px;
-        margin: 14px;
+        padding: 14px;
       }
       &_text {
         display: none;
@@ -200,7 +202,6 @@
           min-width: 320px;
         }
         > td:nth-child(3) {
-          width: 240px;
           min-width: 240px;
         }
       }
