@@ -15,14 +15,14 @@
             transition: all 0.6s ease-out;
             content: "";
             position: absolute;
-            top: -5.33px;
+            top: -0.533rem;
         }
         &::after {
             @include humberger_line;
             transition: all 0.6s ease-out;
             content: "";
             position: absolute;
-            top: 5.33px;
+            top: 0.533rem;
         }
         &.is_active {
             background-color: #fff;

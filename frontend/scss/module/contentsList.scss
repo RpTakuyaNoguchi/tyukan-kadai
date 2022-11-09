@@ -18,39 +18,39 @@
         position: relative;
     }
 
+    .contents_list_input_icon {
+        &::before {
+            @include fontIcon_rounded("\e8b6");
+            color: color(font);
+            width: 2.4rem;
+            height: 2.4rem;
+            font-size: 2.4rem;
+            position: absolute;
+            left: 2.2rem;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
     .contents_list_input {
-        height: 52px;
-        font-size: 14px;
-        border: 1px solid color(border);
-        padding-left: calc(12px + 24px + 8px);
-        padding-right: 12px;
+        height: 5.2rem;
+        font-size: 1.4rem;
+        border: 0.1rem solid color(border);
+        padding-left: calc(1.2rem + 2.4rem + 0.8rem);
+        padding-right: 1.2rem;
         line-height: 20.27px;
         box-sizing: border-box;
 
         &:focus {
             outline: none;
-            border: 2px solid color(hover_focus);
+            border: 0.2rem solid color(hover_focus);
         }
 
         &::placeholder {
-            height: 20px;
-        }
-
-        .contents_list_input_icon {
-            &::before {
-                @include fontIcon_rounded("\e8b6");
-                color: color(font);
-                width: 24px;
-                height: 24px;
-                font-size: 24px;
-                position: absolute;
-                left: 22px;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+            height: 2rem;
         }
     }
 
@@ -62,7 +62,7 @@
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
-        font-size: 14px;
+        font-size: 1.4rem;
 
         .contents_list_button_img {
             // 位置調整
@@ -77,21 +77,21 @@
         background-color: #ffffff;
         width: 100%;
         border-collapse: collapse;
-        font-size: 14px;
+        font-size: 1.4rem;
 
         .contents_list_table_margin {
-            height: 8px;
-            border-radius: 4px 4px 0px 0px;
+            height: 0.8rem;
+            border-radius: 0.4rem 0.4rem 0 0;
             background-color: #ffffff;
         }
 
         .contents_list_table_item {
-            height: 48px;
+            height: 4.8rem;
             text-align: left;
             width: 100%;
 
             td {
-                padding: 8px 8px;
+                padding: 0.8rem 0.8rem;
                 box-sizing: border-box;
             }
 
@@ -102,59 +102,56 @@
     }
 
     @include mq(pc) {
-        margin-left: 80px;
-        padding: 0 40px;
+        margin-left: 8rem;
+        padding: 0 4rem;
         transition: margin 0.8s ease-in-out;
 
         &.is_active {
-            margin-left: 400px;
+            margin-left: 40rem;
         }
 
         .contents_list_title {
-            font-size: 32px;
-            height: 46px;
-            line-height: 46px;
-            margin-top: 42px;
-            margin-bottom: 40px;
+            font-size: 3.2rem;
+            height: 4.6rem;
+            line-height: 4.6rem;
+            margin-top: 4.2rem;
+            margin-bottom: 4rem;
         }
 
         .contents_list_search {
-            margin-bottom: 24px;
+            margin-bottom: 2.4rem;
 
             .radius {
-                border-radius: 4px;
+                border-radius: 0.4rem;
             }
         }
 
         .contents_list_input {
-            width: calc(100% - 166px - 166px - 32px);
+            width: calc(100% - 16.6rem - 16.6rem - 3.2rem);
             // width: 100px;
         }
 
         .contents_list_button {
-            width: 166px; //ホントは１６４px 文字折り返すから２px大きくしてる
-            height: 50px;
+            width: 16.6rem; //ホントは１６４px 文字折り返すから２px大きくしてる
+            height: 5rem;
             // レイアウト調整
-            border: 1px solid color(button);
-            margin-left: 16px;
-            padding-right: 24px;
-            padding-left: 16px;
+            border: 0.1rem solid color(button);
+            margin-left: 1.6rem;
+            padding-right: 2.4rem;
+            padding-left: 1.6rem;
             display: flex;
 
             .contents_list_button_img {
                 // 大きさ調整
-                width: 18px;
-                height: 18px;
-                font-size: 18px;
+                width: 1.8rem;
+                height: 1.8rem;
+                font-size: 1.8rem;
                 // レイアウト調整
-                padding-right: 8px;
+                padding-right: 0.8rem;
             }
 
             .contents_list_button_text {
                 display: block;
-                // width: 98px;
-                // height: 20px;
-                // padding-right: 24px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -162,7 +159,7 @@
         }
 
         .contents_list_table {
-            margin-bottom: 142px;
+            margin-bottom: 14.2rem;
 
             &.sp_table {
                 display: none;
@@ -184,8 +181,8 @@
 
     @include mq(sp) {
         margin-left: 0;
-        margin-bottom: 48px;
-        padding: 0 16px;
+        margin-bottom: 4.8rem;
+        padding: 0 1.6rem;
         box-sizing: border-box;
 
         &.is_active {
@@ -193,40 +190,40 @@
         }
 
         .contents_list_title {
-            font-size: 22px;
-            height: 33px;
+            font-size: 2.2rem;
+            height: 3.3rem;
             line-height: 31.86px;
-            margin: 33px 0;
+            margin: 3.3rem 0;
         }
 
         .contents_list_search {
-            margin-bottom: 18px;
+            margin-bottom: 1.8rem;
         }
 
         .contents_list_input {
-            width: calc(100% - 52px - 52px);
-            border-top-left-radius: 4px;
-            border-bottom-left-radius: 4px;
+            width: calc(100% - 5.2rem - 5.2rem);
+            border-top-left-radius: 0.4rem;
+            border-bottom-left-radius: 0.4rem;
         }
 
         .contents_list_button {
-            width: 52px;
-            height: 52px;
+            width: 5.2rem;
+            height: 5.2rem;
             margin: 0;
-            border: 1px solid color(border);
+            border: 0.1rem solid color(border);
             background-color: #ffffff;
             box-sizing: border-box;
 
             &.sp_border_radius {
-                border-top-right-radius: 4px;
-                border-bottom-right-radius: 4px;
+                border-top-right-radius: 0.4rem;
+                border-bottom-right-radius: 0.4rem;
             }
 
             .contents_list_button_img {
-                width: 24px;
-                height: 24px;
-                font-size: 24px;
-                padding: 14px;
+                width: 2.4rem;
+                height: 2.4rem;
+                font-size: 2.4rem;
+                padding: 1.4rem;
             }
 
             .contents_list_button_text {
@@ -242,7 +239,7 @@
         .contents_list_table {
             overflow-x: scroll;
             display: none;
-            margin-bottom: 40px;
+            margin-bottom: 4rem;
 
             &.sp_table {
                 display: block;
@@ -250,16 +247,16 @@
 
             .contents_list_table_item {
                 > td:nth-child(1) {
-                    width: 160px;
-                    min-width: 160px;
+                    width: 16rem;
+                    min-width: 16rem;
                 }
                 > td:nth-child(2) {
                     word-break: break-all;
-                    width: 320px;
-                    min-width: 320px;
+                    width: 32rem;
+                    min-width: 32rem;
                 }
                 > td:nth-child(3) {
-                    min-width: 240px;
+                    min-width: 24rem;
                 }
             }
         }

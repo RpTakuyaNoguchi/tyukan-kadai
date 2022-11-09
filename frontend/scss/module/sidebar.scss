@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 .side_bar {
-    width: 80px;
+    width: 8rem;
     height: 100vh;
-    padding-top: 56px;
+    padding-top: 5.6rem;
     background-color: white;
     box-sizing: border-box;
-    border-right: 1px solid color(border);
+    border-right: 0.1rem solid color(border);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -15,37 +15,37 @@
 
     .humberger_icon {
         // 大きさ調整
-        width: 24px;
-        height: 24px;
-        padding-bottom: 40px;
+        width: 2.4rem;
+        height: 2.4rem;
+        padding-bottom: 4rem;
         @include pointer;
     }
 
     .side_bar_icon {
-        margin-top: 4px;
-        width: 56px;
-        height: 46px;
-        padding: 5px 12px;
+        margin-top: 0.4rem;
+        width: 5.6rem;
+        height: 4.6rem;
+        padding: 0.5rem 1.2rem;
         color: color(font);
 
         .side_bar_icon_img {
             // 大きさ調整
-            width: 28px;
-            height: 28px;
-            font-size: 28px;
+            width: 2.8rem;
+            height: 2.8rem;
+            font-size: 2.8rem;
             // 位置調整
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto;
             // レイアウト調整
-            padding: 2px 14px;
+            padding: 0.2rem 1.4rem;
         }
 
         .side_bar_icon_text {
             text-align: center;
-            height: 14px;
-            padding-top: 4px;
+            height: 1.4rem;
+            padding-top: 0.4rem;
             box-sizing: border-box;
         }
 
