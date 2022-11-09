@@ -21,14 +21,14 @@
         @include pointer;
     }
 
-    &_icon {
+    .side_bar_icon {
         margin-top: 4px;
         width: 56px;
         height: 46px;
         padding: 5px 12px;
         color: color(font);
 
-        &_img {
+        .side_bar_icon_img {
             // 大きさ調整
             width: 28px;
             height: 28px;
@@ -42,7 +42,7 @@
             padding: 2px 14px;
         }
 
-        &_text {
+        .side_bar_icon_text {
             text-align: center;
             height: 14px;
             padding-top: 4px;

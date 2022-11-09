@@ -1,38 +1,38 @@
 @charset "UTF-8";
 
 .sp_add_icon {
-  display: none;
-  @include mq(sp) {
-    @include pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 16px;
-    top: 24px;
-    width: 120px;
-    height: 50px;
-    background-color: color(button);
-    color: #fff;
-    border-radius: 4px;
-    &_img {
-      display: flex;
-      align-items: center;
-      font-size: 18px;
-      justify-content: center;
-      width: 18px;
-      height: 18px;
-      margin: 16px 8px 16px 16px;
+    display: none;
+    @include mq(sp) {
+        @include pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 16px;
+        top: 24px;
+        width: 120px;
+        height: 50px;
+        background-color: color(button);
+        color: #fff;
+        border-radius: 4px;
+        .sp_add_icon_img {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            margin: 16px 8px 16px 16px;
+        }
+        .sp_add_icon_text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 54px;
+            height: 20px;
+            font-size: 14px;
+            line-height: 20.27px;
+            margin: 15px 24px 15px 0;
+        }
     }
-    &_text {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 54px;
-      height: 20px;
-      font-size: 14px;
-      line-height: 20.27px;
-      margin: 15px 24px 15px 0;
-    }
-  }
 }

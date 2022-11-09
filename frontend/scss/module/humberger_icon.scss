@@ -1,39 +1,39 @@
 @charset "UTF-8";
 
 .humberger_icon {
-  // 位置調整
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // ハンバーガーアイコン作成
-  &_line {
-    position: relative;
-    @include humberger_line;
-    transition: all 0.6s ease-out;
-    &::before {
-      @include humberger_line;
-      transition: all 0.6s ease-out;
-      content: "";
-      position: absolute;
-      top: -5.33px;
+    // 位置調整
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // ハンバーガーアイコン作成
+    .humberger_icon_line {
+        position: relative;
+        @include humberger_line;
+        transition: all 0.6s ease-out;
+        &::before {
+            @include humberger_line;
+            transition: all 0.6s ease-out;
+            content: "";
+            position: absolute;
+            top: -5.33px;
+        }
+        &::after {
+            @include humberger_line;
+            transition: all 0.6s ease-out;
+            content: "";
+            position: absolute;
+            top: 5.33px;
+        }
+        &.is_active {
+            background-color: #fff;
+            &::before {
+                top: 0;
+                transform: rotate(-45deg);
+            }
+            &::after {
+                top: 0;
+                transform: rotate(45deg);
+            }
+        }
     }
-    &::after {
-      @include humberger_line;
-      transition: all 0.6s ease-out;
-      content: "";
-      position: absolute;
-      top: 5.33px;
-    }
-    &.is_active {
-      background-color: #fff;
-      &::before {
-        top: 0;
-        transform: rotate(-45deg);
-      }
-      &::after {
-        top: 0;
-        transform: rotate(45deg);
-      }
-    }
-  }
 }

@@ -4,53 +4,53 @@
 // レイアウト調整
 
 .icon {
-  margin-top: 4px;
-  width: 56px;
-  height: 46px;
-  padding: 5px 12px;
-  color: color(font);
+    margin-top: 4px;
+    width: 56px;
+    height: 46px;
+    padding: 5px 12px;
+    color: color(font);
 
-  &_img {
-    // 大きさ調整
-    width: 28px;
-    height: 28px;
-    font-size: 28px;
-    // 位置調整
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    // レイアウト調整
-    padding: 2px 14px;
-  }
+    .icon_img {
+        // 大きさ調整
+        width: 28px;
+        height: 28px;
+        font-size: 28px;
+        // 位置調整
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        // レイアウト調整
+        padding: 2px 14px;
+    }
 
-  &_text {
-    text-align: center;
-  }
+    .icon_text {
+        text-align: center;
+    }
 
-  @include pointer;
+    @include pointer;
 }
 
 .side_bar_contents_icon.is_active {
-  color: color(button);
-  & > .icon_img {
-    border-radius: 40px;
-    background: linear-gradient(
-        0deg,
-        color(contents_icon_bg),
-        color(contents_icon_bg)
-      ),
-      #fff;
-  }
+    color: color(button);
+    .icon_img {
+        border-radius: 40px;
+        background: linear-gradient(
+                0deg,
+                color(contents_icon_bg),
+                color(contents_icon_bg)
+            ),
+            #fff;
+    }
 }
 
 .js_contents_icon.is_active {
-  color: color(button);
-  border-radius: 40px;
-  background: linear-gradient(
-      0deg,
-      color(contents_icon_bg),
-      color(contents_icon_bg)
-    ),
-    #fff;
+    color: color(button);
+    border-radius: 40px;
+    background: linear-gradient(
+            0deg,
+            color(contents_icon_bg),
+            color(contents_icon_bg)
+        ),
+        #fff;
 }

@@ -8,17 +8,17 @@
     );
     width: 100%;
 
-    &_title {
+    .contents_list_title {
         font-weight: 400;
     }
 
-    &_search {
+    .contents_list_search {
         display: flex;
         align-items: flex-end;
         position: relative;
     }
 
-    &_input {
+    .contents_list_input {
         height: 52px;
         font-size: 14px;
         border: 1px solid color(border);
@@ -36,7 +36,7 @@
             height: 20px;
         }
 
-        &_icon {
+        .contents_list_input_icon {
             &::before {
                 @include fontIcon_rounded("\e8b6");
                 color: color(font);
@@ -54,7 +54,7 @@
         }
     }
 
-    &_button {
+    .contents_list_button {
         @include pointer;
         color: color(button);
         // 位置調整
@@ -64,7 +64,7 @@
         box-sizing: border-box;
         font-size: 14px;
 
-        &_img {
+        .contents_list_button_img {
             // 位置調整
             display: flex;
             align-items: center;
@@ -72,20 +72,20 @@
         }
     }
 
-    &_table {
+    .contents_list_table {
         color: color(font);
         background-color: #ffffff;
         width: 100%;
         border-collapse: collapse;
         font-size: 14px;
 
-        &_margin {
+        .contents_list_table_margin {
             height: 8px;
             border-radius: 4px 4px 0px 0px;
             background-color: #ffffff;
         }
 
-        &_item {
+        .contents_list_table_item {
             height: 48px;
             text-align: left;
             width: 100%;
@@ -110,7 +110,7 @@
             margin-left: 400px;
         }
 
-        &_title {
+        .contents_list_title {
             font-size: 32px;
             height: 46px;
             line-height: 46px;
@@ -118,7 +118,7 @@
             margin-bottom: 40px;
         }
 
-        &_search {
+        .contents_list_search {
             margin-bottom: 24px;
 
             .radius {
@@ -126,12 +126,12 @@
             }
         }
 
-        &_input {
+        .contents_list_input {
             width: calc(100% - 166px - 166px - 32px);
             // width: 100px;
         }
 
-        &_button {
+        .contents_list_button {
             width: 166px; //ホントは１６４px 文字折り返すから２px大きくしてる
             height: 50px;
             // レイアウト調整
@@ -141,7 +141,7 @@
             padding-left: 16px;
             display: flex;
 
-            &_img {
+            .contents_list_button_img {
                 // 大きさ調整
                 width: 18px;
                 height: 18px;
@@ -150,7 +150,7 @@
                 padding-right: 8px;
             }
 
-            &_text {
+            .contents_list_button_text {
                 display: block;
                 // width: 98px;
                 // height: 20px;
@@ -161,14 +161,14 @@
             }
         }
 
-        &_table {
+        .contents_list_table {
             margin-bottom: 142px;
 
             &.sp_table {
                 display: none;
             }
 
-            &_item {
+            .contents_list_table_item {
                 > td:nth-child(1) {
                     width: 18.75%;
                 }
@@ -192,24 +192,24 @@
             margin-left: 0;
         }
 
-        &_title {
+        .contents_list_title {
             font-size: 22px;
             height: 33px;
             line-height: 31.86px;
             margin: 33px 0;
         }
 
-        &_search {
+        .contents_list_search {
             margin-bottom: 18px;
         }
 
-        &_input {
+        .contents_list_input {
             width: calc(100% - 52px - 52px);
             border-top-left-radius: 4px;
             border-bottom-left-radius: 4px;
         }
 
-        &_button {
+        .contents_list_button {
             width: 52px;
             height: 52px;
             margin: 0;
@@ -222,14 +222,14 @@
                 border-bottom-right-radius: 4px;
             }
 
-            &_img {
+            .contents_list_button_img {
                 width: 24px;
                 height: 24px;
                 font-size: 24px;
                 padding: 14px;
             }
 
-            &_text {
+            .contents_list_button_text {
                 display: none;
             }
 
@@ -239,7 +239,7 @@
             }
         }
 
-        &_table {
+        .contents_list_table {
             overflow-x: scroll;
             display: none;
             margin-bottom: 40px;
@@ -248,7 +248,7 @@
                 display: block;
             }
 
-            &_item {
+            .contents_list_table_item {
                 > td:nth-child(1) {
                     width: 160px;
                     min-width: 160px;

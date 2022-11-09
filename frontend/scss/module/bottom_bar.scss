@@ -1,45 +1,45 @@
 @charset "UTF-8";
 
 .bottom_bar {
-  display: none;
+    display: none;
 
-  @include mq(sp) {
-    display: block;
-    border: 1px solid color(border);
-    width: 100%;
-    height: 48px;
-    position: fixed;
-    bottom: 0;
-    background-color: #fff;
-    z-index: 1;
+    @include mq(sp) {
+        display: block;
+        border: 1px solid color(border);
+        width: 100%;
+        height: 48px;
+        position: fixed;
+        bottom: 0;
+        background-color: #fff;
+        z-index: 1;
 
-    &_items {
-      height: 100%;
-      display: flex;
-      margin: 0 4px;
-      justify-content: space-between;
-      align-items: center;
-    }
+        .bottom_bar_items {
+            height: 100%;
+            display: flex;
+            margin: 0 4px;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    &_item {
-      height: 32px;
-      flex: 1;
-      padding: 0;
-      margin: 8px 12px 8px;
-      > .icon_img {
-        width: 32px;
-        height: 32px;
-        padding: 0;
-        color: color(button);
-      }
+        .bottom_bar_item {
+            height: 32px;
+            flex: 1;
+            padding: 0;
+            margin: 8px 12px 8px;
+            .icon_img {
+                width: 32px;
+                height: 32px;
+                padding: 0;
+                color: color(button);
+            }
+        }
+        .bottom_bar_humberger_icon {
+            @include pointer;
+            p,
+            p::after,
+            p::before {
+                background-color: color(button);
+            }
+        }
     }
-    &_humberger_icon {
-      @include pointer;
-      > p,
-      p::after,
-      p::before {
-        background-color: color(button);
-      }
-    }
-  }
 }
