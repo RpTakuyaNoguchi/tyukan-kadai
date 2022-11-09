@@ -28,6 +28,9 @@ p {
   display: flex;
   width: 100%; }
 
+input {
+  padding: 0; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -545,7 +548,7 @@ template {
     .contents_list {
       margin-left: 80px;
       padding: 0 40px;
-      transition: all 0.8s ease-in-out; }
+      transition: margin 0.8s ease-in-out; }
       .contents_list.is_active {
         margin-left: 400px; }
       .contents_list_title {
@@ -647,7 +650,7 @@ template {
   background-color: #ffff;
   position: fixed;
   flex-shrink: 0;
-  transition: all 0.8s ease-in-out; }
+  transition: 0.8s margin ease-in-out; }
   @media screen and (min-width: 768px) {
     .contents_add {
       width: 320px;
@@ -686,9 +689,11 @@ template {
       margin-right: 0; } }
   .contents_add_body {
     width: 100%;
-    height: calc(100vh - 82px);
-    padding: 24px 16px 0px 16px;
-    box-sizing: border-box; }
+    height: 100vh;
+    padding: 24px 16px 83px 16px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    position: relative; }
   .contents_add_title {
     font-size: 18px;
     line-height: 26.06px;
@@ -702,11 +707,6 @@ template {
         height: 26px;
         font-weight: 400;
         margin-right: 0; } }
-  .contents_add_items {
-    overflow-y: scroll;
-    height: calc(100% - 50px);
-    padding-bottom: 40px;
-    box-sizing: border-box; }
   .contents_add_text {
     font-size: 14px;
     height: 20px;
@@ -751,7 +751,8 @@ template {
   .contents_add_login {
     margin-top: 8px;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 40px; }
     .contents_add_login_check {
       width: 48px;
       height: 48px;
@@ -760,27 +761,30 @@ template {
       justify-content: center; }
       .contents_add_login_check:hover {
         cursor: pointer; }
-    .contents_add_login_checkbox {
+    .contents_add_login .contents_add_login_checkbox {
       display: none; }
-      .contents_add_login_checkbox:checked + label {
+      .contents_add_login .contents_add_login_checkbox + .contents_add_login_check + .contents_add_login_check {
+        display: none; }
+      .contents_add_login .contents_add_login_checkbox:checked + .contents_add_login_check {
         position: relative;
         display: none; }
-      .contents_add_login_checkbox:checked + label + label {
+      .contents_add_login .contents_add_login_checkbox:checked + .contents_add_login_check + .contents_add_login_check {
         display: flex; }
-    .contents_add_login_checked_icon {
-      display: none; }
     .contents_add_login_text {
       font-size: 14px; }
       .contents_add_login_text:hover {
         cursor: pointer; }
   .contents_add_buttons {
-    width: 100%;
+    width: 320px;
     padding: 16px;
     box-sizing: border-box;
+    background-color: #fff;
     border-top: 1px solid rgba(0, 0, 0, 0.12);
     display: flex;
     align-items: center;
-    gap: 16px; }
+    gap: 16px;
+    position: absolute;
+    bottom: 0; }
   .contents_add_button_reset {
     flex: 1;
     height: 50px;

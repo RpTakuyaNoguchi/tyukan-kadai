@@ -58,57 +58,49 @@
           </div>
           <div class="contents_add_title">コンテンツ追加</div>
           <div class="contents_add_register_sp">登録</div>
-          <div class="contents_add_items">
-            <div class="contents_add_text">氏名</div>
-            <input class="contents_add_input" type="text" maxlength="10" />
-            <div class="contents_add_helper">
-              １０文字以内で入力してください
-            </div>
-            <div class="contents_add_text">メールアドレス</div>
+          <div class="contents_add_text">氏名</div>
+          <input class="contents_add_input" type="text" maxlength="10" />
+          <div class="contents_add_helper">１０文字以内で入力してください</div>
+          <div class="contents_add_text">メールアドレス</div>
+          <input
+            class="contents_add_input"
+            type="email"
+            pattern="^[0-9a-zA-Z]+$"
+          />
+          <div class="contents_add_helper">半角で入力してください</div>
+          <div class="contents_add_text">電話番号</div>
+          <input class="contents_add_input" type="tel" pattern="[^-]" />
+          <div class="contents_add_helper">ハイフンなしで入力してください</div>
+          <div class="contents_add_text">誕生日</div>
+          <input class="contents_add_input" type="date" />
+          <div class="contents_add_text">イメージカラー</div>
+          <label class="image_color_label" for="image_color">
+            <input class="contents_add_input image_color" type="color" />
+          </label>
+          <div class="contents_add_text">ログイン状態</div>
+          <div class="contents_add_login">
             <input
-              class="contents_add_input"
-              type="email"
-              pattern="^[0-9a-zA-Z]+$"
+              class="contents_add_login_checkbox"
+              id="contents_add_login_checkbox"
+              type="checkbox"
             />
-            <div class="contents_add_helper">半角で入力してください</div>
-            <div class="contents_add_text">電話番号</div>
-            <input class="contents_add_input" type="tel" pattern="[^-]" />
-            <div class="contents_add_helper">
-              ハイフンなしで入力してください
-            </div>
-            <div class="contents_add_text">誕生日</div>
-            <input class="contents_add_input" type="date" />
-            <div class="contents_add_text">イメージカラー</div>
-            <label class="image_color_label" for="image_color">
-              <input class="contents_add_input image_color" type="color" />
+            <label
+              for="contents_add_login_checkbox"
+              class="contents_add_login_check"
+            >
+              <span class="material-symbols-rounded">
+                check_box_outline_blank
+              </span>
             </label>
-            <div class="contents_add_text">ログイン状態</div>
-            <div class="contents_add_login">
-              <input
-                class="contents_add_login_checkbox"
-                id="contents_add_login_checkbox"
-                type="checkbox"
-              />
-              <label
-                for="contents_add_login_checkbox"
-                class="contents_add_login_check"
-              >
-                <span class="material-symbols-rounded">
-                  check_box_outline_blank
-                </span>
-              </label>
-              <label
-                for="contents_add_login_checkbox"
-                class="contents_add_login_check"
-              >
-                <span class="material-symbols-rounded"> check_box </span>
-              </label>
-              <label for="contents_add_login_checkbox">
-                <div class="contents_add_login_text">
-                  ログイン状態を保持する
-                </div>
-              </label>
-            </div>
+            <label
+              for="contents_add_login_checkbox"
+              class="contents_add_login_check"
+            >
+              <span class="material-symbols-rounded"> check_box </span>
+            </label>
+            <label for="contents_add_login_checkbox">
+              <div class="contents_add_login_text">ログイン状態を保持する</div>
+            </label>
           </div>
         </div>
         <div class="contents_add_buttons">
