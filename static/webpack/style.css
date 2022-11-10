@@ -347,7 +347,8 @@ input {
   .icon .icon_text {
     text-align: center; }
   .icon:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    opacity: 0.6; }
 
 .side_bar_contents_icon.is_active {
   color: #6b0fa4; }
@@ -413,9 +414,10 @@ input {
   .side_bar .humberger_icon {
     width: 2.4rem;
     height: 2.4rem;
-    padding-bottom: 4rem; }
+    margin-bottom: 4rem; }
     .side_bar .humberger_icon:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      opacity: 0.6; }
   .side_bar .side_bar_icon {
     margin-top: 0.4rem;
     width: 5.6rem;
@@ -437,7 +439,8 @@ input {
       padding-top: 0.4rem;
       box-sizing: border-box; }
     .side_bar .side_bar_icon:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      opacity: 0.6; }
   @media screen and (max-width: 1024px) {
     .side_bar {
       display: none; } }
@@ -473,7 +476,8 @@ input {
         padding: 0;
         color: #6b0fa4; }
     .bottom_bar .bottom_bar_humberger_icon:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      opacity: 0.6; }
     .bottom_bar .bottom_bar_humberger_icon p,
     .bottom_bar .bottom_bar_humberger_icon p::after,
     .bottom_bar .bottom_bar_humberger_icon p::before {
@@ -564,7 +568,8 @@ input {
     box-sizing: border-box;
     font-size: 1.4rem; }
     .contents_list .contents_list_button:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      opacity: 0.6; }
     .contents_list .contents_list_button .contents_list_button_img {
       display: flex;
       align-items: center;
@@ -681,11 +686,16 @@ input {
       .contents_add.is_active {
         margin-top: 9.8rem; } }
   .contents_add .contents_add_body {
-    padding: 2.4rem 1.6rem 8.3rem 1.6rem;
     height: 100%;
     box-sizing: border-box;
-    overflow-y: scroll;
     position: relative; }
+    @media screen and (min-width: 1025px) {
+      .contents_add .contents_add_body {
+        overflow-y: scroll;
+        padding: 2.4rem 1.6rem 8.3rem 1.6rem; } }
+    @media screen and (max-width: 1024px) {
+      .contents_add .contents_add_body {
+        padding-top: 2.4rem; } }
   @media screen and (min-width: 1025px) {
     .contents_add .contents_add_close_sp {
       display: none; } }
@@ -705,7 +715,8 @@ input {
         align-items: center;
         justify-content: center; }
       .contents_add .contents_add_close_sp:hover {
-        cursor: pointer; } }
+        cursor: pointer;
+        opacity: 0.6; } }
   @media screen and (min-width: 1025px) {
     .contents_add .contents_add_register_sp {
       display: none; } }
@@ -717,7 +728,8 @@ input {
       font-size: 1.8rem;
       color: #6b0fa4; }
       .contents_add .contents_add_register_sp:hover {
-        cursor: pointer; } }
+        cursor: pointer;
+        opacity: 0.6; } }
   .contents_add .contents_add_title {
     font-size: 1.8rem;
     padding-bottom: 0.6rem; }
@@ -728,7 +740,13 @@ input {
       .contents_add .contents_add_title {
         height: 2.6rem;
         font-weight: 400;
-        padding-left: 5rem; } }
+        padding-left: 6.6rem;
+        padding-bottom: 3rem; } }
+  @media screen and (max-width: 1024px) {
+    .contents_add .contents_add_items {
+      height: calc(100% - 5.6rem);
+      overflow-y: scroll;
+      padding: 0 1.6rem; } }
   .contents_add .contents_add_text {
     font-size: 1.4rem;
     height: 2rem;
@@ -782,7 +800,8 @@ input {
       align-items: center;
       justify-content: center; }
       .contents_add .contents_add_login .contents_add_login_check:hover {
-        cursor: pointer; }
+        cursor: pointer;
+        opacity: 0.6; }
       .contents_add .contents_add_login .contents_add_login_check .contents_add_login_check_img {
         color: rgba(0, 0, 0, 0.6); }
     .contents_add .contents_add_login .contents_add_login_checkbox {
@@ -797,7 +816,8 @@ input {
     .contents_add .contents_add_login .contents_add_login_text {
       font-size: 1.4rem; }
       .contents_add .contents_add_login .contents_add_login_text:hover {
-        cursor: pointer; }
+        cursor: pointer;
+        opacity: 0.6; }
   @media screen and (min-width: 1025px) {
     .contents_add .contents_add_buttons {
       width: 32rem;
@@ -822,7 +842,8 @@ input {
     align-items: center;
     justify-content: center; }
     .contents_add .contents_add_button_reset:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      opacity: 0.6; }
     .contents_add .contents_add_button_reset .contents_add_button_reset_text {
       color: #6b0fa4; }
   .contents_add .contents_add_button_register {
@@ -835,7 +856,8 @@ input {
     background-color: #6b0fa4;
     color: #fff; }
     .contents_add .contents_add_button_register:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      opacity: 0.6; }
 
 .sp_add_icon {
   display: none; }
@@ -853,7 +875,8 @@ input {
       color: #fff;
       border-radius: 0.4rem; }
       .sp_add_icon:hover {
-        cursor: pointer; }
+        cursor: pointer;
+        opacity: 0.6; }
       .sp_add_icon .sp_add_icon_img {
         display: flex;
         align-items: center;

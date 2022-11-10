@@ -32,11 +32,18 @@
     }
 
     .contents_add_body {
-        padding: 2.4rem 1.6rem 8.3rem 1.6rem;
         height: 100%;
         box-sizing: border-box;
-        overflow-y: scroll;
         position: relative;
+
+        @include mq(pc) {
+            overflow-y: scroll;
+            padding: 2.4rem 1.6rem 8.3rem 1.6rem;
+        }
+
+        @include mq(sp) {
+            padding-top: 2.4rem;
+        }
     }
 
     .contents_add_close_sp {
@@ -61,6 +68,7 @@
             @include pointer;
         }
     }
+
     .contents_add_register_sp {
         @include mq(pc) {
             display: none;
@@ -84,9 +92,19 @@
         @include mq(sp) {
             height: 2.6rem;
             font-weight: 400;
-            padding-left: 5rem;
+            padding-left: 6.6rem;
+            padding-bottom: 3rem;
         }
     }
+
+    .contents_add_items {
+        @include mq(sp) {
+            height: calc(100% - 5.6rem);
+            overflow-y: scroll;
+            padding: 0 1.6rem;
+        }
+    }
+
     .contents_add_text {
         font-size: 1.4rem;
         height: 2rem;

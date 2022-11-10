@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 @mixin pointer {
-  &:hover {
-    cursor: pointer;
-  }
+    &:hover {
+        cursor: pointer;
+        opacity: 0.6;
+    }
 }
