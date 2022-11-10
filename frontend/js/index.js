@@ -1,4 +1,8 @@
 import "../scss/style.scss";
+import { copyToClipboard, validation } from "./validation";
+
+validation();
+copyToClipboard();
 
 const humberger_icon = document.querySelector(".humberger_icon");
 const side_bar_contents_icon = document.querySelector(
@@ -12,6 +16,8 @@ const humberger_icon_line = document.querySelector(".humberger_icon_line");
 const contents_add = document.querySelector(".contents_add");
 const contents_add_buttons = document.querySelector(".contents_add_buttons");
 const contents_list = document.querySelector(".contents_list");
+const copyclipboard = document.querySelector(".copyclipboard");
+const copyclipboard_btn = document.querySelector(".copyclipboard_btn");
 
 // ハンバーガーアイコンをクリックしたときのイベント
 humberger_icon.addEventListener("click", () => {
@@ -56,4 +62,9 @@ js_add_sheet_open.addEventListener("click", () => {
 // スマホのばつボタンをクリックしたときのイベント
 contents_add_close_sp.addEventListener("click", () => {
     sheet_is_close();
+});
+
+// クリップボードコピーしましたの閉じるボタンを押したときのイベント
+copyclipboard_btn.addEventListener("click", () => {
+    copyclipboard.classList.remove("is_active");
 });
